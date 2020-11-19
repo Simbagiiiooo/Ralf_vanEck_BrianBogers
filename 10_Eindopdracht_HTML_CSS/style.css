@@ -1,0 +1,220 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+.container-header {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 100px;
+}
+
+.menu {
+  grid-column: 1 /-1;
+  grid-row: 1 / 1;
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  padding: 13px;
+  background-color: black;
+}
+
+.push {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.titel {
+  grid-column: 1 /-1;
+  grid-row: 2 / 2;
+  background-color: #c70016;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  text-shadow: 1px 2px #353b48;
+  padding: 33px;
+}
+
+a {
+  text-decoration: none;
+  color: #c70016;
+}
+
+.container-main {
+  display: flex;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  justify-content: center;
+  padding: 20px;
+}
+.container > img {
+  width: auto;
+  height: 100px;
+}
+.bb {
+  text-align: center;
+  background-color: blue;
+  padding: 15px;
+  font-size: 15px;
+  text-shadow: 1px 2px #353b48;
+}
+
+.paragraaf {
+  background-image: url("./img/BB_gasgas.jpg");
+  background-size: cover;
+  margin: 30px 15px 30px 15px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+.links a {
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+  display: block;
+}
+.information {
+  color: white;
+  text-align: center;
+}
+
+.copywrite {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  border: 5px solid white;
+  border-radius: 30px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+}
+
+.foto-gallerij {
+  color: whitesmoke;
+  text-align: center;
+  border: 5px solid whitesmoke;
+  padding: 10px;
+  width: 250px;
+  margin: 20px auto 40px auto;
+  border-radius: 30px;
+}
+
+.container-gallerij > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-gallerij {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  padding: 60px 20px;
+  grid-auto-flow: dense;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.form {
+  color: white;
+  font-size: 15px;
+  padding: 100px;
+}
+input {
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.video {
+  margin-top: 40px;
+  margin-left: 35px;
+}
+
+@media (min-width: 920px) {
+  .menu {
+    font-size: 30px;
+    padding: 8px;
+  }
+  .titel {
+    font-size: 35px;
+    padding: 30px;
+  }
+  .video {
+    margin-left: 350px;
+  }
+  .bb {
+    font-size: 25px;
+  }
+  .paragraaf {
+    font-size: 15px;
+    margin: 20px 150px 20px 150px;
+  }
+  .container > img {
+    width: auto;
+    height: 200px;
+  }
+  .container-gallerij {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .menu {
+    font-size: 40px;
+    padding: 3px;
+  }
+  .titel {
+    font-size: 45px;
+    padding: 23px;
+  }
+  .video {
+    margin-left: 570px;
+  }
+  .bb {
+    font-size: 30px;
+  }
+  .paragraaf {
+    font-size: 20px;
+    margin: 40px 300px 40px 300px;
+  }
+  .container > img {
+    width: auto;
+    height: 300px;
+  }
+  .container-gallerij {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+  }
+}
