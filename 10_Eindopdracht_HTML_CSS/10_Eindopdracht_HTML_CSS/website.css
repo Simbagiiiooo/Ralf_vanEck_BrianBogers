@@ -1,0 +1,68 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 13px;
+  background-color: black;
+}
+
+.push {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.titel {
+  background-color: #c70016;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  text-shadow: 1px 1px #353b48;
+  padding: 33px;
+}
+
+.copywrite {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border: 5px solid white;
+  border-radius: 30px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 175px;
+}
+li a {
+  text-decoration: none;
+  color: #c70016;
+  list-style-type: none;
+}
+
+@media (min-width: 920px) {
+  .menu {
+    font-size: 30px;
+    padding: 8px;
+  }
+  .titel {
+    font-size: 35px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .menu {
+    font-size: 40px;
+    padding: 3px;
+  }
+  .titel {
+    font-size: 45px;
+    padding: 23px;
+  }
+}
